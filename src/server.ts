@@ -1,6 +1,7 @@
 import express from "express";
 import router from "./router";
 import morgan from "morgan";
+import cors from "cors";
 
 const express = require("express");
 
@@ -11,6 +12,7 @@ const app = express();
 //   next();
 // };
 
+app.use(cors()); // allow cross-origin requests
 app.use(morgan("dev")); // log requests to the console
 app.use(express.json()); // allow client to send json data
 app.use(express.urlencoded({ extended: true })); // take query string and put it in a object
