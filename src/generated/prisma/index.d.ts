@@ -5817,6 +5817,7 @@ export namespace Prisma {
 
   export type ProductWhereUniqueInput = Prisma.AtLeast<{
     id?: string
+    id_belongsToId?: ProductIdBelongsToIdCompoundUniqueInput
     AND?: ProductWhereInput | ProductWhereInput[]
     OR?: ProductWhereInput[]
     NOT?: ProductWhereInput | ProductWhereInput[]
@@ -5825,7 +5826,7 @@ export namespace Prisma {
     belongsToId?: StringFilter<"Product"> | string
     belongsTo?: XOR<UserScalarRelationFilter, UserWhereInput>
     updates?: UpdateListRelationFilter
-  }, "id">
+  }, "id" | "id_belongsToId">
 
   export type ProductOrderByWithAggregationInput = {
     id?: SortOrder
@@ -6341,6 +6342,11 @@ export namespace Prisma {
 
   export type UpdateOrderByRelationAggregateInput = {
     _count?: SortOrder
+  }
+
+  export type ProductIdBelongsToIdCompoundUniqueInput = {
+    id: string
+    belongsToId: string
   }
 
   export type ProductCountOrderByAggregateInput = {
