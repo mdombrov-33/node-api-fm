@@ -14,7 +14,6 @@ import {
   getOneUpdate,
   updateUpdate,
 } from "./handlers/update";
-import app from "./server";
 
 const router = Router();
 
