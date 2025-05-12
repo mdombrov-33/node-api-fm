@@ -192,11 +192,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://node_api_fm_user:NXz28ehdOXgseDZmjupxZ9zDlETSq4az@dpg-d0gb0qk9c44c73fdr8h0-a.frankfurt-postgres.render.com/node_api_fm"
+        "value": null
       }
     }
   },
