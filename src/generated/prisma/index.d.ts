@@ -6094,7 +6094,7 @@ export namespace Prisma {
   export type UpdateCreateInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -6107,7 +6107,7 @@ export namespace Prisma {
   export type UpdateUncheckedCreateInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -6146,7 +6146,7 @@ export namespace Prisma {
   export type UpdateCreateManyInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -6890,7 +6890,7 @@ export namespace Prisma {
   export type UpdateCreateWithoutProductInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -6902,7 +6902,7 @@ export namespace Prisma {
   export type UpdateUncheckedCreateWithoutProductInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -7078,7 +7078,7 @@ export namespace Prisma {
   export type UpdateCreateWithoutUpdatePointsInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -7090,7 +7090,7 @@ export namespace Prisma {
   export type UpdateUncheckedCreateWithoutUpdatePointsInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS
@@ -7168,7 +7168,7 @@ export namespace Prisma {
   export type UpdateCreateManyProductInput = {
     id?: string
     createdAt?: Date | string
-    updatedAt: Date | string
+    updatedAt?: Date | string
     title: string
     body: string
     status?: $Enums.UPDATE_STATUS

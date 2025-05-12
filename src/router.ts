@@ -43,6 +43,7 @@ router.post(
 //* Delete a product
 router.delete("/product/:id", deleteProduct);
 
+/////////////////////////////////
 //* UPDATE
 router.get("/update", getAllUpdates);
 
@@ -78,6 +79,7 @@ router.post(
 
 router.delete("/update/:id", deleteUpdate);
 
+/////////////////////////////////////
 //* UPDATE POINTS
 router.get("/updatepoint", () => {});
 

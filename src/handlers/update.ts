@@ -34,7 +34,6 @@ export const createUpdate = async (req, res) => {
   const product = await prisma.product.findUnique({
     where: {
       id: req.body.productId,
-      belongsToId: req.user.id,
     },
   });
 
